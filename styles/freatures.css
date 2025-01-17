@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-font {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .navbar, .bannar-containar{
+    max-width: 1440px;
+    margin: 0 auto;
+   
+  }
+  .bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .brand-titel{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+  }
+  .nav-links{
+    display: flex;
+  }
+  .nav-item{
+    list-style-type: none;
+    margin-right: 24px;
+  }
+  .nav-link{
+    text-decoration: none;
+    color: #424242;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+  .bannar-contant{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+
+  }
+  .bannar-titel{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+  }
+  .bannar-description{
+    font-size: 1rem;
+    color: #727272;
+  }
+  .blt-primary{
+    background-color:  #FF900E;
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.25rem;
+    color:white;
+    margin-top: 10px;
+  }
+  .img-pic{
+    width: 100%;
+  }
+  main{
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  main > section{
+    margin-top: 130px;
+  }
+  .teams{
+    display: flex;
+    align-items: center;
+}
+.teams-pictures{
+    display: grid;
+    grid-template-columns: repeat( 2,1fr);
+    gap: 20px;
+}
+.teams-discription{
+    max-width: 537px;
+    align-content: center;
+    margin-left: 73px;
+}
+.teams-tilel{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+#Quick-list{
+    font-weight: 500;
+    color: #727272;
+}
+.bg-lights{
+    color: #FF900E;
+}
+.tems-des{
+    color: #727272;
+}
+.Awards-Winnings{
+    display: flex;
+    border: 1px solid #FF900E;
+    width: 241px;
+    height: 241px;
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+   
+}
+.numbar-1{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color:#424242 ;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.awards-5{
+    font-size: 1.25rem;
+    color:#424242 ;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+.fact-dscription{
+    max-width: 542px;
+    margin-top:10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #727272;
+}
+.some-factd{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;
+}
+.Some-Facts{
+    display: grid;
+    gap: 20px;
+    padding-left: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.our-sponsor{
+  max-width: 542px;
+  height: 129px;
+  margin: 50px auto;
+ text-align: center;
+}
+.spondor-glo{
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #131313;
+}
+.sponsor-description{
+  font-size: 1rem;
+  color: #727272;
+}
+.sponsor-companys{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companys img{
+  filter: grayscale(100%);
+}
+.features-tilel{
+  font-size: 3rem;
+  color: #131313;
+  font-weight: 700;
+}
+.features-descrip{
+  color: #727272;
+  font-size: 1rem;
+}
+#section-heade{
+border-left: 5px solid #FF900E;
+padding-left: 20px;
+}
+.crad-box{
+  border-radius: 8px;
+  padding: 30px;
+ box-shadow: 0 4px 30px 0 rgb(230, 227, 227);
+ margin-bottom: 10px;
+ 
+}
+.features{
+  display: flex;
+  gap: 140px;
+}
+.features-crad-titel{
+ font-size: 1.25rem;
+font-weight: 600;
+color: #131313;
+margin: 0;
+padding: 0;
+}
+#Experience-10{
+  width: 342px;
+  height: 200px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#bage-10{
+  font-size: 4rem;
+  font-weight: 700;
+}
+.features-pic img{
+  width: 100%;
+}
+  @media screen and (max-width:576px) {
+     .navbar,
+     .nav-links,
+      .teams,
+       .features
+     {
+        flex-direction: column;
+     }
+     .teams-pictures , .Some-Facts , .sponsor-companys{
+        grid-template-columns: 1fr ;
+     }
+      .sponsor-companys{
+        justify-items: center;
+        gap: 50px;
+        padding-top: 20px;
+
+      }
+     .Some-Facts{
+      justify-items: center;
+     }
+    
+     #Experience-10{
+      margin-top: 20px;
+      margin-left: 20px;
+     }
+     
+     }
+     .nav-item{
+        margin-top: 24px;
+     }
+    
+    
+   

@@ -6,4 +6,169 @@
     font-weight: 400;
     font-style: normal;
   }
+  /* shared style */
+  .display-flex{
+   display: flex;
+  }
+ .dark-gray{
+    color: #727272;
+ }
+ 
+ /* drak-2 */
+ .text-ligt-gay{
+    color: #424242;
+ }
+ .bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+ }
+ .blt-primary{
+    background-color: rgba(255, 144, 14, 1);
+    width: 180px;
+    height: 64px;
+   font-size: 1.25rem;
+   font-weight: 600;
+   border-radius: 8px;
+   border: none;
+   margin-top: 20px;
+   color: white;
   
+ }
+ main {
+    max-width: 1440px;
+    margin: 0 auto;
+   
+ }
+ main > section{
+    margin-top: 130px;
+ }
+/* header style */
+
+  /* naver related style */
+  .navbar{
+  justify-content: space-between;
+  align-items: center;
+  }
+  .nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .nav-item{
+   list-style-type: none;
+    margin-right: 30px;
+   
+  }
+  .navbar, .bannar{
+    max-width: 1440px;
+    margin:  0 auto ;
+  }
+  .brand{
+    font-size: 2rem;
+    font-weight: 700px;
+  }
+  .bannar-contant{
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .contant-titel{
+    font-size: 4rem;
+    font-weight: 700;
+  
+    color: #131313;
+  }
+  .contant-description{
+      font-size: 1rem;
+      color: #727272;
+     
+    
+  }
+  .img-pic{
+    width: 100%;
+  }
+    /* features releted styles */
+    .teams{
+        align-items: center;
+    }
+    .teams-img-containar{
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .teams-Features{
+        margin-left: 76px;
+        max-width: 537px;
+    }
+    .section-titel{
+        font-size: 2.8rem;
+        font-weight: 700;
+    }
+    #Quick list{
+        font-weight: 500;
+    }
+    .bg-color{
+        color: #FF900E;
+    }
+    .facts-containar{
+        display: grid;
+         gap: 124px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+     .facts{
+        border: 1px solid  #FF900E ;
+        max-width: 240px;
+        height: 240px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+       border-radius: 8px;
+     }
+     .facts-numbar{
+        font-size: 2.8rem;
+        font-weight: 600;
+        color: #424242;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        
+     }
+     .fact-name{
+        font-size: 1.25rem;
+        font-weight: 600px;
+        color: #727272;
+        margin-top: 10px;
+        
+     }
+     .fact-description{
+        max-width: 540px;
+     }
+  @media screen and (max-width:576px){
+    .navbar,
+     .nav-links,
+       .teams  {
+        flex-direction: column;
+    }
+    .teams-img-containar , .facts-containar{
+       display: grid;
+     grid-template-columns: 1fr;
+    }
+    .facts{
+      max-width: 100% ;
+     
+      
+    }
+    .nav-item{
+        margin-top: 10px;
+    }
+}
+  
+  @media screen and ( min-width:576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .teams-Features{
+        margin: 50px;
+    }
+    
+  }
